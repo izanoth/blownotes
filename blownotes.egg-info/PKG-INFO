@@ -1,12 +1,14 @@
 Metadata-Version: 2.4
 Name: blownotes
-Version: 0.1.0
+Version: 0.1.1
 Summary: Extraia notas dominantes de um áudio (.wav, .mp3, etc) com precisão RMS ou por regiões ativas.
 Author-email: "I. Zanoth" <ivanzanoth@gmail.com>
 License: MIT
 Description-Content-Type: text/markdown
+License-File: LICENSE
 Requires-Dist: librosa
 Requires-Dist: numpy
+Dynamic: license-file
 
 # 🎵 Blow Notes
 
@@ -32,7 +34,7 @@ pip install blownotes
 Ou clone e instale localmente:
 
 ```bash
-git clone https://github.com/seunome/blownotes
+git clone https://github.com/izanoth/blownotes
 cd blownotes
 pip install .
 ```
@@ -59,7 +61,7 @@ Você poderá definir uma sensibilidade:
 
 Para melhores resultados, separe os elementos do áudio antes da análise (ex: voz, bateria, baixo). Isso evita que sons simultâneos confundam o sistema de detecção.
 
-🔧 Uma ferramenta recomendada é o [https://github.com/facebookresearch/demucs](Demucs):
+🔧 Uma ferramenta recomendada é o [Demucs](https://github.com/facebookresearch/demucs):
 
 Depois, use o blownotes apenas no arquivo de voz ou instrumento que desejar.
 
@@ -68,3 +70,4 @@ Depois, use o blownotes apenas no arquivo de voz ou instrumento que desejar.
 MIT
 
 Autor: I. Zanoth
+ivanzanoth@gmail.com
